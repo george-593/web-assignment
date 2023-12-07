@@ -7,6 +7,9 @@ module.exports = {
         "title": ["Montserrat", "sans-serif"],
         "text": ["Roboto", "sans-serif"]
       },
+      screens: {
+        "header": "965px"
+      }
     },
     colors: {
       "primary": "#f23005",
