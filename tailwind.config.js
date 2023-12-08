@@ -17,7 +17,8 @@ module.exports = {
       "accent": "#f27405",
       "black": "#262526",
       "grey": "#889190",
-      "transparent": "transparent"
+      "transparent": "transparent",
+      "white": "white"
     }
   },
   plugins: [],
