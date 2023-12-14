@@ -26,7 +26,7 @@
                 Rock'n'Rollin Bike Club</h1>
         </a>
         <div class="mx-10 items-center hidden header:flex">
-            <a href="../index.html" class="hover:underline font-text mr-2">Home</a>
+            <a href="/index.html" class="hover:underline font-text mr-2">Home</a>
             <a href="/pages/bikes.html" class="hover:underline font-text mr-2">Bikes</a>
             <a href="/pages/creators.html" class="hover:underline font-text mr-2">Content Creators</a>
             <a href="/pages/trails.html" class="hover:underline font-text mr-2">Maps & Trails</a>
@@ -52,7 +52,7 @@
         </div>
     </div>
     <hr class="my-4 h-0.5 border-t-0 bg-gradient-to-r from-transparent to-transparent via-primary opacity-60" />
-    <div class="w-[70%] mx-auto flex flex-col my-7">
+    <div class="w-[85%] header:w-[70%] mx-auto flex flex-col my-7">
         <div class="my-4">
             <h2 class="font-title text-5xl text-center mb-8 font-bold">Bikes</h2>
             <p class="font-text text-lg">
@@ -66,36 +66,144 @@
             </p>
         </div>
 
+        <!-- Full Suspension Bikes -->
         <div class="my-10">
             <h3 class="font-title text-3xl text-center mb-4 font-bold">Full Suspension</h3>
-            <div class="grid grid-rows-2 rounded-xl border shadow-xl">
-                <div>
-                    <div class="relative text-center">
-                        <img src="/assets/bikes/fullsus-01.jpg" alt="Showcase Image" class="w-full rounded-xl"
-                            id="slideshow-img">
-                        <div class="absolute top-1/2 left-1 translate-y-1/2 pl-2">
-                            <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                                class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
-                                id="arrow-next">
-                        </div>
-                        <div class="absolute top-1/2 right-1 translate-y-1/2 pr-2">
-                            <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                                class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
-                                id="arrow-prev">
-                        </div>
+            <div class="flex flex-col rounded-xl border shadow-xl p-2">
+                <div class="relative text-center border-2 rounded-lg py-4">
+                    <div class="flex justify-center">
+                        <img src="/assets/bikes/fullsus-01.jpg" alt="Showcase Image"
+                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-fs">
+                    </div>
+                    <div class="absolute top-1/2 left-1 pl-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+                            id="arrow-next-fs">
+                    </div>
+                    <div class="absolute top-1/2 right-1 pr-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
+                            id="arrow-prev-fs">
+                    </div>
+                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-fs">
+                        1 / 4
+                    </div>
+                    <div id="dot-container-fs" class="text-center">
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
                     </div>
                 </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quibusdam facilis quae nihil
-                        numquam fuga labore magni voluptatibus rem error ea, dignissimos ab architecto expedita
-                        molestias cumque atque commodi esse, voluptas dolorem. Nostrum eveniet recusandae, veniam, in
-                        eum qui temporibus ipsum tempore alias dolore voluptatum cumque dolorem sequi! Sit, a! Fuga
-                        temporibus veritatis consectetur suscipit reiciendis vero odit quibusdam quos alias unde.
-                        Aliquam, libero dolore. Voluptatem recusandae esse assumenda nemo placeat, atque sapiente
-                        inventore, dolores a quasi harum aliquid perferendis incidunt quia? Enim vitae officia libero
-                        impedit accusantium, est aliquam, omnis sit architecto quae facere, culpa molestiae deserunt
-                        possimus veritatis.
+                <div class="mt-6 px-3">
+                    <p class="font-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
+                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
+                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
+                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
+                        debitis repudiandae?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gravel Bikes -->
+        <div class="my-10">
+            <h3 class="font-title text-3xl text-center mb-4 font-bold">Gravel</h3>
+            <div class="flex flex-col rounded-xl border shadow-xl p-2">
+                <div class="relative text-center border-2 rounded-lg py-4">
+                    <div class="flex justify-center">
+                        <img src="/assets/bikes/gravel-01.jpg" alt="Showcase Image"
+                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-gr">
+                    </div>
+                    <div class="absolute top-1/2 left-1 pl-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+                            id="arrow-next-gr">
+                    </div>
+                    <div class="absolute top-1/2 right-1 pr-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 "
+                            id="arrow-prev-gr">
+                    </div>
+                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-gr">
+                        1 / 6
+                    </div>
+                    <div id="dot-container-gr" class="text-center">
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                    </div>
+                </div>
+                <div class="mt-6 px-3">
+                    <p class="font-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
+                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
+                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
+                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
+                        debitis repudiandae?
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hardtail Bikes -->
+        <div class="my-10">
+            <h3 class="font-title text-3xl text-center mb-4 font-bold">Hardtail</h3>
+            <div class="flex flex-col rounded-xl border shadow-xl p-2">
+                <div class="relative text-center border-2 rounded-lg py-4">
+                    <div class="flex justify-center">
+                        <img src="/assets/bikes/hardtail-01.jpg" alt="Showcase Image"
+                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-ht">
+                    </div>
+                    <div class="absolute top-1/2 left-1 pl-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+                            id="arrow-next-ht">
+                    </div>
+                    <div class="absolute top-1/2 right-1 pr-1">
+                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
+                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
+                            id="arrow-prev-ht">
+                    </div>
+                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-ht">
+                        1 / 6
+                    </div>
+                    <div id="dot-container-ht" class="text-center">
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                        <span
+                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
+                    </div>
+                </div>
+                <div class="mt-6 px-3">
+                    <p class="font-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
+                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
+                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
+                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
+                        debitis repudiandae?
                     </p>
                 </div>
             </div>
