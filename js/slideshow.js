@@ -51,9 +51,10 @@ var slideIndexHT = 0
 var lastSlideIndexHT = 0
 
 const changeSlide = (type) => {
-    imgSrc = ""
+    let imgSrc = ""
     switch (type) {
         case "FULLSUS":
+            imgSrc = ""
             if (slideIndexFS >= FULLSUS_IMAGES.length) {
                 imgSrc = FULLSUS_IMAGES[0]
                 slideIndexFS = 0
@@ -72,6 +73,7 @@ const changeSlide = (type) => {
             dotContainerFS.children[lastSlideIndexFS].classList.remove("bg-black")
             dotContainerFS.children[lastSlideIndexFS].classList.add("bg-grey")
             lastSlideIndexFS = slideIndexFS
+            break;
         case "GRAVEL":
             if (slideIndexGR >= GRAVEL_IMAGES.length) {
                 imgSrc = GRAVEL_IMAGES[0]
@@ -91,6 +93,7 @@ const changeSlide = (type) => {
             dotContainerGR.children[lastSlideIndexGR].classList.remove("bg-black")
             dotContainerGR.children[lastSlideIndexGR].classList.add("bg-grey")
             lastSlideIndexGR = slideIndexGR
+            break;
         case "HARDTAIL":
             if (slideIndexHT >= HARDTAIL_IMAGES.length) {
                 imgSrc = HARDTAIL_IMAGES[0]
@@ -110,6 +113,7 @@ const changeSlide = (type) => {
             dotContainerHT.children[lastSlideIndexHT].classList.remove("bg-black")
             dotContainerHT.children[lastSlideIndexHT].classList.add("bg-grey")
             lastSlideIndexHT = slideIndexHT
+            break;
     }
 }
 
