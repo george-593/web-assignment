@@ -1,214 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock'n'Rollin Bike Club</title>
+		<link rel="stylesheet" href="/css/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="/js/header.js" defer></script>
+		<script src="/js/slideshow.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock'n'Rollin Bike Club</title>
-    <link rel="stylesheet" href="/css/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-    <script src="/js/header.js" defer></script>
-    <script src="/js/slideshow.js" defer></script>
-</head>
+	<body>
+		<!--Main Navigation Bar-->
+		<nav
+			class="w-[80%] mx-auto my-4 flex justify-between header:justify-evenly items-center"
+		>
+			<a class="flex items-center" href="/index.html">
+				<img
+					src="/assets/logo-small.png"
+					alt="Logo Small"
+					class="w-12 p-1 bg-primary rounded-xl mr-4 hover:scale-110 transition-all duration-200"
+				/>
+				<h1
+					class="text-xl font-title font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text"
+				>
+					Rock'n'Rollin Bike Club
+				</h1>
+			</a>
+			<div class="mx-10 items-center hidden header:flex">
+				<a href="/index.html" class="hover:underline font-text mr-2"
+					>Home</a
+				>
+				<a
+					href="/pages/bikes.html"
+					class="hover:underline font-text mr-2"
+					>Bikes</a
+				>
+				<a
+					href="/pages/creators.html"
+					class="hover:underline font-text mr-2"
+					>Content Creators</a
+				>
+				<a
+					href="/pages/trails.html"
+					class="hover:underline font-text mr-2"
+					>Maps & Trails</a
+				>
+				<a href="/pages/skills.html" class="hover:underline font-text"
+					>Skills</a
+				>
+			</div>
+			<div class="header:hidden block">
+				<img
+					src="/assets/icons/menu.png"
+					alt="Mobile Menu Icon"
+					class="w-8 hover:cursor-pointer"
+					id="mobile-menu-btn"
+				/>
+			</div>
+		</nav>
+		<!--Mobile Navigation Bar-->
+		<div
+			class="bg-black w-[90%] py-8 mx-auto rounded-xl hidden"
+			id="mobile-menu"
+		>
+			<div class="mx-4 flex flex-col">
+				<a
+					href="/index.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Home</a
+				>
+				<a
+					href="/pages/bikes.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Bikes</a
+				>
+				<a
+					href="/pages/creators.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Content Creators</a
+				>
+				<a
+					href="/pages/trails.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Maps & Trails</a
+				>
+				<a
+					href="/pages/skills.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Skills</a
+				>
+			</div>
+		</div>
+		<hr
+			class="my-4 h-0.5 border-t-0 bg-gradient-to-r from-transparent to-transparent via-primary opacity-60"
+		/>
+		<div class="w-[85%] header:w-[70%] mx-auto flex flex-col my-7">
+			<div class="my-4">
+				<h2 class="font-title text-5xl text-center mb-8 font-bold">
+					Bikes
+				</h2>
+				<p class="font-text text-lg">
+					Welcome to the heart of Rock'n'Rollin Bike Club, where we're
+					thrilled to offer a diverse range of high-performance bikes
+					tailored to meet the needs of every cyclist. Our three
+					distinct categories - Full Suspension, Gravel, and Hardtail
+					- cater to riders seeking exhilarating experiences across
+					various terrains.
+					<br />
+					<br />
+					At Rock'n'Rollin Bike Club, we understand that every cyclist
+					has unique preferences and aspirations. That's why we've
+					curated a selection of top-notch bikes in each category,
+					ensuring that our members have the perfect companion for
+					their cycling adventures. Join us on the road, trail, or
+					wherever your cycling journey takes you, and experience the
+					thrill of Rock'n'Rollin biking at its finest.
+				</p>
+			</div>
 
-<body>
-    <!--Main Navigation Bar-->
-    <nav class="w-[80%] mx-auto my-4 flex justify-between header:justify-evenly items-center">
-        <a class="flex items-center" href="/index.html">
-            <img src="/assets/logo-small.png" alt="Logo Small"
-                class="w-12 p-1 bg-primary rounded-xl mr-4 hover:scale-110 transition-all duration-200">
-            <h1
-                class="text-xl font-title font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                Rock'n'Rollin Bike Club</h1>
-        </a>
-        <div class="mx-10 items-center hidden header:flex">
-            <a href="/index.html" class="hover:underline font-text mr-2">Home</a>
-            <a href="/pages/bikes.html" class="hover:underline font-text mr-2">Bikes</a>
-            <a href="/pages/creators.html" class="hover:underline font-text mr-2">Content Creators</a>
-            <a href="/pages/trails.html" class="hover:underline font-text mr-2">Maps & Trails</a>
-            <a href="/pages/skills.html" class="hover:underline font-text">Skills</a>
-        </div>
-        <div class="header:hidden block">
-            <img src="/assets/icons/menu.png" alt="Mobile Menu Icon" class="w-8 hover:cursor-pointer"
-                id="mobile-menu-btn">
-        </div>
-    </nav>
-    <!--Mobile Navigation Bar-->
-    <div class="bg-black w-[90%] py-8 mx-auto rounded-xl hidden" id="mobile-menu">
-        <div class="mx-4 flex flex-col">
-            <a href="/index.html" class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Home</a>
-            <a href="/pages/bikes.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Bikes</a>
-            <a href="/pages/creators.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Content Creators</a>
-            <a href="/pages/trails.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Maps & Trails</a>
-            <a href="/pages/skills.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Skills</a>
-        </div>
-    </div>
-    <hr class="my-4 h-0.5 border-t-0 bg-gradient-to-r from-transparent to-transparent via-primary opacity-60" />
-    <div class="w-[85%] header:w-[70%] mx-auto flex flex-col my-7">
-        <div class="my-4">
-            <h2 class="font-title text-5xl text-center mb-8 font-bold">Bikes</h2>
-            <p class="font-text text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem accusamus, recusandae illo iure
-                itaque
-                repudiandae inventore? Quaerat nostrum ab praesentium culpa facere natus voluptas in optio illo
-                temporibus
-                minus officia perferendis eius, sint laborum recusandae, quos necessitatibus. Maxime a veritatis tempora
-                incidunt aliquam quibusdam, maiores ipsam adipisci eius fuga voluptate corrupti numquam cum fugiat quia
-                atque similique voluptates quae?
-            </p>
-        </div>
+			<!-- Full Suspension Bikes -->
+			<div class="my-10">
+				<h3 class="font-title text-3xl text-center mb-4 font-bold">
+					Full Suspension
+				</h3>
+				<div class="flex flex-col rounded-xl border shadow-xl p-2">
+					<div class="relative text-center border-2 rounded-lg py-4">
+						<div class="flex justify-center">
+							<img
+								src="/assets/bikes/fullsus-01.jpg"
+								alt="Showcase Image"
+								class="w-full rounded-xl max-w-[1000px]"
+								id="slideshow-img-fs"
+							/>
+						</div>
+						<div class="absolute top-1/2 left-1 pl-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+								id="arrow-next-fs"
+							/>
+						</div>
+						<div class="absolute top-1/2 right-1 pr-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
+								id="arrow-prev-fs"
+							/>
+						</div>
+						<div
+							class="absolute top-0 py-2 px-3 font-text font-bold text-lg"
+							id="counter-fs"
+						>
+							1 / 4
+						</div>
+						<div id="dot-container-fs" class="text-center">
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+						</div>
+					</div>
+					<div class="mt-6 px-3">
+						<p class="font-text">
+							Engage in the ultimate cycling adventure with our
+							Full Suspension bikes. Designed for tackling
+							challenging terrains and conquering downhill trails,
+							these bikes provide unmatched comfort and control.
+							Whether you're navigating rocky descents or pushing
+							the limits of speed, our Full Suspension bikes are
+							your ticket to a smooth and thrilling ride.
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <!-- Full Suspension Bikes -->
-        <div class="my-10">
-            <h3 class="font-title text-3xl text-center mb-4 font-bold">Full Suspension</h3>
-            <div class="flex flex-col rounded-xl border shadow-xl p-2">
-                <div class="relative text-center border-2 rounded-lg py-4">
-                    <div class="flex justify-center">
-                        <img src="/assets/bikes/fullsus-01.jpg" alt="Showcase Image"
-                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-fs">
-                    </div>
-                    <div class="absolute top-1/2 left-1 pl-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
-                            id="arrow-next-fs">
-                    </div>
-                    <div class="absolute top-1/2 right-1 pr-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
-                            id="arrow-prev-fs">
-                    </div>
-                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-fs">
-                        1 / 4
-                    </div>
-                    <div id="dot-container-fs" class="text-center">
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                    </div>
-                </div>
-                <div class="mt-6 px-3">
-                    <p class="font-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
-                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
-                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
-                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
-                        debitis repudiandae?
-                    </p>
-                </div>
-            </div>
-        </div>
+			<!-- Gravel Bikes -->
+			<div class="my-10">
+				<h3 class="font-title text-3xl text-center mb-4 font-bold">
+					Gravel
+				</h3>
+				<div class="flex flex-col rounded-xl border shadow-xl p-2">
+					<div class="relative text-center border-2 rounded-lg py-4">
+						<div class="flex justify-center">
+							<img
+								src="/assets/bikes/gravel-01.jpg"
+								alt="Showcase Image"
+								class="w-full rounded-xl max-w-[1000px]"
+								id="slideshow-img-gr"
+							/>
+						</div>
+						<div class="absolute top-1/2 left-1 pl-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+								id="arrow-next-gr"
+							/>
+						</div>
+						<div class="absolute top-1/2 right-1 pr-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
+								id="arrow-prev-gr"
+							/>
+						</div>
+						<div
+							class="absolute top-0 py-2 px-3 font-text font-bold text-lg"
+							id="counter-gr"
+						>
+							1 / 6
+						</div>
+						<div id="dot-container-gr" class="text-center">
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+						</div>
+					</div>
+					<div class="mt-6 px-3">
+						<p class="font-text">
+							Discover the joy of exploration with our versatile
+							Gravel bikes. Perfect for those seeking adventure on
+							both paved and unpaved roads, these bikes offer
+							exceptional performance and adaptability. Whether
+							you're embarking on a scenic country ride or
+							venturing off the beaten path, our Gravel bikes
+							ensure a comfortable and exciting journey.
+						</p>
+					</div>
+				</div>
+			</div>
 
-        <!-- Gravel Bikes -->
-        <div class="my-10">
-            <h3 class="font-title text-3xl text-center mb-4 font-bold">Gravel</h3>
-            <div class="flex flex-col rounded-xl border shadow-xl p-2">
-                <div class="relative text-center border-2 rounded-lg py-4">
-                    <div class="flex justify-center">
-                        <img src="/assets/bikes/gravel-01.jpg" alt="Showcase Image"
-                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-gr">
-                    </div>
-                    <div class="absolute top-1/2 left-1 pl-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
-                            id="arrow-next-gr">
-                    </div>
-                    <div class="absolute top-1/2 right-1 pr-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 "
-                            id="arrow-prev-gr">
-                    </div>
-                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-gr">
-                        1 / 6
-                    </div>
-                    <div id="dot-container-gr" class="text-center">
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                    </div>
-                </div>
-                <div class="mt-6 px-3">
-                    <p class="font-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
-                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
-                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
-                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
-                        debitis repudiandae?
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Hardtail Bikes -->
-        <div class="my-10">
-            <h3 class="font-title text-3xl text-center mb-4 font-bold">Hardtail</h3>
-            <div class="flex flex-col rounded-xl border shadow-xl p-2">
-                <div class="relative text-center border-2 rounded-lg py-4">
-                    <div class="flex justify-center">
-                        <img src="/assets/bikes/hardtail-01.jpg" alt="Showcase Image"
-                            class="w-full rounded-xl max-w-[1000px]" id="slideshow-img-ht">
-                    </div>
-                    <div class="absolute top-1/2 left-1 pl-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
-                            id="arrow-next-ht">
-                    </div>
-                    <div class="absolute top-1/2 right-1 pr-1">
-                        <img src="/assets/icons/arrow.png" alt="Left Arrow"
-                            class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
-                            id="arrow-prev-ht">
-                    </div>
-                    <div class="absolute top-0 py-2 px-3 font-text font-bold text-lg" id="counter-ht">
-                        1 / 6
-                    </div>
-                    <div id="dot-container-ht" class="text-center">
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                        <span
-                            class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"></span>
-                    </div>
-                </div>
-                <div class="mt-6 px-3">
-                    <p class="font-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate beatae similique ducimus,
-                        veritatis earum, incidunt ratione facere, nam consequuntur quod ullam? Veniam, molestiae quidem
-                        consequuntur beatae aliquid facere nesciunt nobis fugiat dolore illum tempore labore consectetur
-                        voluptatibus rem odit doloremque voluptatem et voluptates quia similique quae aperiam fuga
-                        debitis repudiandae?
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
+			<!-- Hardtail Bikes -->
+			<div class="my-10">
+				<h3 class="font-title text-3xl text-center mb-4 font-bold">
+					Hardtail
+				</h3>
+				<div class="flex flex-col rounded-xl border shadow-xl p-2">
+					<div class="relative text-center border-2 rounded-lg py-4">
+						<div class="flex justify-center">
+							<img
+								src="/assets/bikes/hardtail-01.jpg"
+								alt="Showcase Image"
+								class="w-full rounded-xl max-w-[1000px]"
+								id="slideshow-img-ht"
+							/>
+						</div>
+						<div class="absolute top-1/2 left-1 pl-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200 rotate-180"
+								id="arrow-next-ht"
+							/>
+						</div>
+						<div class="absolute top-1/2 right-1 pr-1">
+							<img
+								src="/assets/icons/arrow.png"
+								alt="Left Arrow"
+								class="hover:cursor-pointer w-8 hover:scale-125 hover:transition-transform duration-200"
+								id="arrow-prev-ht"
+							/>
+						</div>
+						<div
+							class="absolute top-0 py-2 px-3 font-text font-bold text-lg"
+							id="counter-ht"
+						>
+							1 / 6
+						</div>
+						<div id="dot-container-ht" class="text-center">
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-black hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+							<span
+								class="hover:cursor-pointer h-4 w-4 mx-1 bg-grey hover:bg-black rounded-full inline-block transition-colors duration-500"
+							></span>
+						</div>
+					</div>
+					<div class="mt-6 px-3">
+						<p class="font-text">
+							Experience the perfect blend of simplicity and
+							agility with our Hardtail bikes. Ideal for riders
+							who love the responsiveness and control of a front
+							suspension, these bikes excel on technical trails
+							and provide a dynamic and engaging cycling
+							experience. Whether you're a seasoned rider or a
+							newcomer, our Hardtail bikes offer a reliable and
+							enjoyable ride.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
