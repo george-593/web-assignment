@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock'n'Rollin Bike Club</title>
+		<link rel="stylesheet" href="/css/output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="/js/header.js" defer></script>
+		<script src="/js/slideshow.js" defer></script>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock'n'Rollin Bike Club</title>
-    <link rel="stylesheet" href="/css/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-    <script src="/js/header.js" defer></script>
-    <script src="/js/slideshow.js" defer></script>
-</head>
-
-<body>
-    <!--Main Navigation Bar-->
-    <nav class="w-[80%] mx-auto my-4 flex justify-between header:justify-evenly items-center">
-        <a class="flex items-center" href="/index.html">
-            <img src="/assets/logo-small.png" alt="Logo Small"
-                class="w-12 p-1 bg-primary rounded-xl mr-4 hover:scale-110 transition-all duration-200">
-            <h1
-                class="text-xl font-title font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
-                Rock'n'Rollin Bike Club</h1>
-        </a>
-        <div class="mx-10 items-center hidden header:flex">
-            <a href="/index.html" class="hover:underline font-text mr-2">Home</a>
-            <a href="/pages/bikes.html" class="hover:underline font-text mr-2">Bikes</a>
-            <a href="/pages/creators.html" class="hover:underline font-text mr-2">Content Creators</a>
-            <a href="/pages/trails.html" class="hover:underline font-text mr-2">Maps & Trails</a>
-            <a href="/pages/skills.html" class="hover:underline font-text">Skills</a>
-        </div>
-        <div class="header:hidden block">
-            <img src="/assets/icons/menu.png" alt="Mobile Menu Icon" class="w-8 hover:cursor-pointer"
-                id="mobile-menu-btn">
-        </div>
-    </nav>
-    <!--Mobile Navigation Bar-->
-    <div class="bg-black w-[90%] py-8 mx-auto rounded-xl hidden" id="mobile-menu">
-        <div class="mx-4 flex flex-col">
-            <a href="/index.html" class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Home</a>
-            <a href="/pages/bikes.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Bikes</a>
-            <a href="/pages/creators.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Content Creators</a>
-            <a href="/pages/trails.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Maps & Trails</a>
-            <a href="/pages/skills.html"
-                class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition">Skills</a>
-        </div>
-    </div>
-    <hr class="my-4 h-0.5 border-t-0 bg-gradient-to-r from-transparent to-transparent via-primary opacity-60" />
-    <div class="w-[85%] header:w-[70%] mx-auto flex flex-col my-7">
-        <div class="my-4">
-            <h2 class="font-title text-5xl text-center mb-8 font-bold">Skills</h2>
-        </div>
-</body>
-
+	<body>
+		<!--Main Navigation Bar-->
+		<nav
+			class="w-[80%] mx-auto my-4 flex justify-between header:justify-evenly items-center"
+		>
+			<a class="flex items-center" href="/index.html">
+				<img
+					src="/assets/logo-small.png"
+					alt="Logo Small"
+					class="w-12 p-1 bg-primary rounded-xl mr-4 hover:scale-110 transition-all duration-200"
+				/>
+				<h1
+					class="text-xl font-title font-bold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text"
+				>
+					Rock'n'Rollin Bike Club
+				</h1>
+			</a>
+			<div class="mx-10 items-center hidden header:flex">
+				<a href="/index.html" class="hover:underline font-text mr-2"
+					>Home</a
+				>
+				<a
+					href="/pages/bikes.html"
+					class="hover:underline font-text mr-2"
+					>Bikes</a
+				>
+				<a
+					href="/pages/creators.html"
+					class="hover:underline font-text mr-2"
+					>Content Creators</a
+				>
+				<a
+					href="/pages/trails.html"
+					class="hover:underline font-text mr-2"
+					>Maps & Trails</a
+				>
+				<a href="/pages/skills.html" class="hover:underline font-text"
+					>Skills</a
+				>
+			</div>
+			<div class="header:hidden block">
+				<img
+					src="/assets/icons/menu.png"
+					alt="Mobile Menu Icon"
+					class="w-8 hover:cursor-pointer"
+					id="mobile-menu-btn"
+				/>
+			</div>
+		</nav>
+		<!--Mobile Navigation Bar-->
+		<div
+			class="bg-black w-[90%] py-8 mx-auto rounded-xl hidden"
+			id="mobile-menu"
+		>
+			<div class="mx-4 flex flex-col">
+				<a
+					href="/index.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Home</a
+				>
+				<a
+					href="/pages/bikes.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Bikes</a
+				>
+				<a
+					href="/pages/creators.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Content Creators</a
+				>
+				<a
+					href="/pages/trails.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Maps & Trails</a
+				>
+				<a
+					href="/pages/skills.html"
+					class="font-text mr-2 bg-black text-white px-2 py-4 hover:bg-grey transition"
+					>Skills</a
+				>
+			</div>
+		</div>
+		<hr
+			class="my-4 h-0.5 border-t-0 bg-gradient-to-r from-transparent to-transparent via-primary opacity-60"
+		/>
+		<div class="w-[85%] header:w-[70%] mx-auto flex flex-col my-7">
+			<div class="my-4">
+				<h2 class="font-title text-5xl text-center mb-8 font-bold">
+					Skills
+				</h2>
+			</div>
+		</div>
+	</body>
 </html>
