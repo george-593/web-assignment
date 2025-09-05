@@ -18,10 +18,10 @@ View the live website here: [web-assignment.george1.co.uk](http://web-assignment
 ## Tech Stack
 
 -   HTML
--   TailwindCSS
+-   Tailwind CSS
 -   JavaScript
 
-## Run Locally
+## Local Setup
 
 1. Clone this repository:
 
